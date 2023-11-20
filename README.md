@@ -1,3 +1,2 @@
 # What is this project?
-
-This app create a GPT ChatBot 
+This app create a basic GPT ChatBot.
