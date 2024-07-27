@@ -15,6 +15,7 @@ class ChatbotWindow (QMainWindow):
         self.chat_area = QTextEdit(self)
         self.chat_area.setGeometry(10, 10, 480, 300)
         self.chat_area.setReadOnly(True)
+        self.chat_area.setText("Bot: Welcome to the chat bot! How can I assist you today?")
 
         # Add Chat Input Widget
         self.input_chat = QLineEdit(self)
@@ -29,6 +30,7 @@ class ChatbotWindow (QMainWindow):
         self.show()
 
     def start_query(self):
+
         self.chatbot = Chatbot()
         self.query = self.input_chat.text().strip()
         self.chat_area.append(f"<p style='color:#333333'>User: {self.query}")

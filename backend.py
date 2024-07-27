@@ -8,7 +8,8 @@ class Chatbot:
 
     def get_response(self, user_input):
         response = openai.Completion.create(
-            engine="text-davinci-003",
+            #engine="text-davinci-003", This GPT Model was deprecated
+            engine="gpt-3.5-turbo-instruct",
             prompt=user_input,
             max_tokens=3000,
             temperature=0.5
